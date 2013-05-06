@@ -1,0 +1,4 @@
+#env vars for user. Pulled in via bashrc
+
+# to set VIM as the editor for the EDITOR variable
+export EDITOR="subl"

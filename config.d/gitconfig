@@ -1,0 +1,31 @@
+[user]
+	name = Pedro Teixeira
+	email = pedro.teixeira@gmail.com
+[core]
+	excludesfile = $HOME/.gitignore_global
+	excludesfile = $HOME/.gitignore
+	editor = /usr/bin/vim
+	ignorecase = true
+[color]
+	ui = auto
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	cp = cherry-pick
+	lp = log --pretty=format:'%h was %an, %ar, message: %s'
+[mergetool "mvimdiff"]
+  cmd=mvim -d -g $LOCAL $MERGED $REMOTE
+  keepbackup=false
+[push]
+	default = tracking
+[branch "master"]
+	rebase = true
+[branch]
+	autosetuprebase = always
+[difftool]
+	prompt = false
+[merge]
+  tool = opendiff
+[mergetool]
+  keepbackup=false
